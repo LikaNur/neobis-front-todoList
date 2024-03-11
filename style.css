@@ -32,6 +32,12 @@ body {
   color: var(--dark);
 }
 
+.app {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
 section {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -168,7 +174,7 @@ input:checked ~ .bubble::after {
   opacity: 0.75;
 }
 
-.tod0-list {
+.todo-list {
   margin: 1rem 0;
 }
 
@@ -200,6 +206,7 @@ input:checked ~ .bubble::after {
 .todo-item .actions {
   display: flex;
   align-items: center;
+  margin-left: 12rem; 
 }
 
 .todo-item .actions button {
@@ -228,4 +235,10 @@ input:checked ~ .bubble::after {
 .todo-item.done .todo-content input {
   text-decoration: line-through;
   color: var(--grey);
+}
+
+@media screen and (max-width: 665px){
+  .todo-item .actions {
+    margin-left: 2rem; 
+  }
 }
